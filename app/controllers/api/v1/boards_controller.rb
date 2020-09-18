@@ -1,6 +1,10 @@
 module Api
-  module v1
+  module V1
     class BoardsController < ApplicationController
+
+      def show
+        @board = Board.find()
+      end
 
     end
   end
