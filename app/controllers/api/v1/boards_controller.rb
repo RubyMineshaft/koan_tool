@@ -21,7 +21,7 @@ module Api
       private
 
       def board_params
-        params.require(:board).permit(:state)
+        params.require(:board).permit(:state, :size)
       end
 
     end
