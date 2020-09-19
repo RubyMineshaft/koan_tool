@@ -1,3 +1,3 @@
 class Board < ApplicationRecord
-  serialize :state, JSON
+  serialize [:id, :state], JSON
 end

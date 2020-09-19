@@ -4,8 +4,8 @@ module Api
 
       def show
         @board = Board.find(params[:id])
-        
-        render json: { status: "SUCCESS", message: "Board state loaded", data: @board.state }, status: :ok
+
+        render json: { status: "SUCCESS", message: "Board state loaded", data: @board }, status: :ok
       end
 
       def create
