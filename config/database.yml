@@ -80,6 +80,7 @@ test:
 #
 production:
   <<: *default
-  database: koan_tool_production
-  username: koan_tool
+  url: <%= ENV['DATABASE_URL'] %>
+  database: koan_tool_db_1cpb
+  username: koan_tool_db_1cpb_user
   password: <%= ENV['KOAN_TOOL_DATABASE_PASSWORD'] %>
