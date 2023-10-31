@@ -216,7 +216,7 @@ function postToAPI(after) {
     }
   };
 
-  fetch("https://koan-tool.onrender.com/api/v1/boards", {
+  fetch("/api/v1/boards", {
     method: "post",
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify(data),
@@ -250,7 +250,7 @@ $(document).ready(function() {
   $('form').on('submit', function(e){
     e.preventDefault();
     let id = document.getElementById('loadId').value;
-    let url = "https://koan-tool.onrender.com/api/v1/boards/" + id;
+    let url = "/api/v1/boards/" + id;
 
     document.getElementById('loadId').value = '';
 
