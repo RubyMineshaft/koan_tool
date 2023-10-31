@@ -19,36 +19,41 @@ function setup() {
     textSize(18)
     textAlign(CENTER, CENTER)
 
-    copyButton = createButton('Save & Copy');
-    copyButton.position(19, 19);
-    copyButton.mousePressed(saveToServer);
+    
+    copyButton = createButton('Copy without Saving');
+    copyButton.position(19, 45);
+    copyButton.mousePressed(copyImage);
 
-    saveButton = createButton('Download to Device');
-    saveButton.position(117, 19);
-    saveButton.mousePressed(saveImage);
+    saveButton = createButton('Save & Copy');
+    saveButton.position(19, 20);
+    saveButton.mousePressed(saveToServer);
+
+    downloadButton = createButton('Download to Device');
+    downloadButton.position(19, 70);
+    downloadButton.mousePressed(saveImage);
 
     fiveFive = createButton('5 x 5');
-    fiveFive.position(19,50);
+    fiveFive.position(19,120);
     fiveFive.mousePressed(resizeBoard5);
 
     sevenSeven = createButton('7 x 7');
-    sevenSeven.position(19, 75);
+    sevenSeven.position(19, 145);
     sevenSeven.mousePressed(resizeBoard7);
 
     nineNine = createButton('9 x 9');
-    nineNine.position(19, 100);
+    nineNine.position(19, 170);
     nineNine.mousePressed(resizeBoard9);
 
     buttonGreen = createButton("Green");
-    buttonGreen.position(19, 150);
+    buttonGreen.position(19, 220);
     buttonGreen.mousePressed(setGreen);
 
     buttonRed = createButton("Red");
-    buttonRed.position(19, 175);
+    buttonRed.position(19, 245);
     buttonRed.mousePressed(setRed);
 
     buttonGray = createButton("Gray");
-    buttonGray.position(19, 200);
+    buttonGray.position(19, 270);
     buttonGray.mousePressed(setGray);
 }
 
